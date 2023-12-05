@@ -6,19 +6,7 @@ module.exports = async function () {
 
   // Function to insert demo data
   const insertDemoData = async () => {
-    const demoData = [
-      {
-        School_name: 'School A',
-        Country: 'Country A',
-        Creatd_at: new Date(), // Fix the typo in the attribute name
-      },
-      {
-        School_name: 'School B',
-        Country: 'Country B',
-        Creatd_at: new Date(), // Fix the typo in the attribute name
-      },
-      // Add more demo data as needed
-    ];
+    const demoData = [];
 
     const existingRecords = await SELECT.from(Schools).then((result) => result.length);
 

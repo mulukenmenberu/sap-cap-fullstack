@@ -6,23 +6,7 @@ module.exports = async function () {
 
   // Function to insert demo data
   const insertDemoData = async () => {
-    const demoData = [
-      {
-        School_id: 1, // Assuming School_id exists in the Schools entity
-        Course_name: 'Course A',
-        Status: 1,
-        Created_at: new Date(),
-        Updated_at: new Date(),
-      },
-      {
-        School_id: 2, // Assuming School_id exists in the Schools entity
-        Course_name: 'Course B',
-        Status: 1,
-        Created_at: new Date(),
-        Updated_at: new Date(),
-      },
-      // Add more demo data as needed
-    ];
+    const demoData = [];
 
     const existingRecords = await SELECT.from(School_courses).then((result) => result.length);
 

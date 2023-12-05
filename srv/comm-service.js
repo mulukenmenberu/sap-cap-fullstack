@@ -6,17 +6,7 @@ module.exports = async function () {
 
   // Function to insert demo data
   const insertDemoData = async () => {
-    const demoData = [
-      {
-        Student_db_id: 1, // Replace with an existing Student_db_id
-        User_id: 1, // Replace with an existing User_id
-        Message: 'Hello, this is a communication message.',
-        Created_date: new Date(),
-        Updated_date: new Date(),
-        Updated_by: 1, // Replace with an existing User_id
-      },
-      // Add more demo data as needed
-    ];
+    const demoData = [];
 
     const existingRecords = await SELECT.from(Student_communications).then((result) => result.length);
 

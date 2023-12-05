@@ -23,6 +23,88 @@ module.exports = async function () {
         Created_at: new Date(),
         Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
       },
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      
+      {
+        Full_name: 'Jane Doe',
+        Gender: 'Female',
+        Office: 'Office B',
+        Advisor: 2, // Assuming the User_id exists in the Users entity
+        Created_at: new Date(),
+        Planned_study_date: new Date('2023-02-01T00:00:00.000Z'),
+      },
+      
     ];
 
     const existingRecords = await SELECT.from(Students).then((result) => result.length);

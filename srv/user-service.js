@@ -6,31 +6,7 @@ module.exports = async function () {
 
   // Function to insert demo data
   const insertDemoData = async () => {
-    const demoData = [
-      {
-        Full_name: 'John Doe',
-        Email: 'john.doe@example.com',
-        Office: 'Office A',
-        Role: 'User',
-        Password: 'hashed_password', // Replace with a hashed password
-        Created_at: new Date(),
-        Updated_at: new Date(),
-        Last_login: new Date(),
-        Account_status: 1, // Replace with a valid status
-      },
-      {
-        Full_name: 'Jane Doe',
-        Email: 'jane.doe@example.com',
-        Office: 'Office B',
-        Role: 'Admin',
-        Password: 'hashed_password', // Replace with a hashed password
-        Created_at: new Date(),
-        Updated_at: new Date(),
-        Last_login: new Date(),
-        Account_status: 1, // Replace with a valid status
-      },
-      // Add more demo data as needed
-    ];
+    const demoData = [];
 
     const existingRecords = await SELECT.from(Users).then((result) => result.length);
 
