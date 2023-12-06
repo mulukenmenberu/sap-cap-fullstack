@@ -6,7 +6,31 @@ module.exports = async function () {
 
   // Function to insert demo data
   const insertDemoData = async () => {
-    const demoData = [];
+    const demoData = [
+      {
+        Full_name: "John Doe",
+        Email: "john.doe@example.com",
+        Office: "Headquarters",
+        Role: "Admin",
+        Password: "encrypted_password_1", // Placeholder for encrypted password
+        Created_at: new Date("2023-01-01T08:00:00Z"),
+        Updated_at: new Date("2023-01-01T08:00:00Z"),
+        Last_login: new Date("2023-01-10T12:30:00Z"),
+        Account_status: 1,
+      },
+      {
+        Full_name: "Jane Doe",
+        Email: "jane.doe@example.com",
+        Office: "Branch Office",
+        Role: "User",
+        Password: "encrypted_password_2", // Placeholder for encrypted password
+        Created_at: new Date("2023-01-02T09:15:00Z"),
+        Updated_at: new Date("2023-01-02T09:15:00Z"),
+        Last_login: new Date("2023-01-12T14:45:00Z"),
+        Account_status: 1,
+      },
+      // Add more user entries as needed
+    ];
 
     const existingRecords = await SELECT.from(Users).then((result) => result.length);
 
