@@ -7,12 +7,12 @@ entity Users : managed {
   Full_name : String;
   Email : String;
   Office : String;
-  Role : String; // Consider a better approach for handling comma-separated roles
+  Role : String; 
   Password : String; // Consider encryption
   Created_at : DateTime;
   Updated_at : DateTime;
   Last_login : DateTime;
-  Account_status : Integer; // Consider using an enum type for status
+  Account_status : Integer; 
 }
 
 entity Students : managed {
@@ -29,7 +29,7 @@ entity Student_communications : managed {
   key Id : Integer;
   Student_db_id : Association to Students;
   User_id : Association to Users;
-  Message : String; // Consider using a longer string type if needed
+  Message : String; 
   Created_date : DateTime;
   Updated_date : DateTime;
   Updated_by : Association to Users;
@@ -39,7 +39,7 @@ entity Schools : managed {
   key School_id : Integer;
   School_name : String;
   Country : String;
-  Creatd_at : DateTime; // Correct the typo in the attribute name
+  Creatd_at : DateTime; 
 }
 
 entity School_courses : managed {
